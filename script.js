@@ -60,11 +60,11 @@ window.addEventListener("load", () => {
 
 
     //NOVA FUNCIONALIDADE --------------------------------------------------------- 
-    //Baixar Imagem 
+    //Baixar Imagem.
 
     // Necessario pegar a imagem EDITADA.
 
-
+    //
     let botao = document.querySelector('a');
 
     botao.onclick = function(){
@@ -87,16 +87,18 @@ window.addEventListener("load", () => {
 
     const webcam = new Webcam(pegarWebcam, 'user', canvas);
 
-    //Acessar Webcam
+    //Acessar Webcam.
     webcam.start().then(result =>{
         alert('Webcam iniciada');
     }).catch(error => {
         alert('Erro');
     });
 
+    //Faz o botão tirar a foto e substituir a imagem atual.
+    pegarFoto.onclick = function(){ 
+        let fotoFinal   = webcam.snap();
+        imagem.href     = fotoFinal;
+    }  
 
-    let fotoFinal = webcam.snap();
-    document.querySelector('a').href = fotoFinal;
-
-
-});
+    //Final do Load --------------------------------------------------------- 
+    });
