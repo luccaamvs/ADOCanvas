@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <link rel="stylesheet" href="style.css">-->
+    
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    
+    <title>ADO 05</title>
+</head>
+<body>
+
+<!-- 
+    
+- Criar um espécie de mini stories do Instagram:
+
+- Tamanho do Stories: 1080x1920 (Feito)
+- Estilizar arredores (Feito)
+
+- Insira uma imagem em um canvas (Feito)
+- Deve ser possível desenhar sobre a imagem com o mouse (Feito)
+
+- Desafio (valendo 1 ponto extra, maximo de 10 pontos):
+- Usuario deve selecionar qual imagem quer enviar (Feito)
+- Deve ser possível baixar a imagem editada para o computador(Feito)
+
+- Desafio++ (valendo +1 ponto extra, apenas se completar o desafio anterior)
+- Imagem deve vir da webcam
+
+-->
+    <!--Enviar o arquivo do PC-->
+    <div>
+        <input type="file" id="imgEnviada" name="file">
+
+    </div>
+
+    <!--Baixar o arquivo do PC-->
+    <a href="" >Baixar Imagem</a>
+
+    
+    <div class="titulo">
+        <h2>Instagram Stories</h2>
+    </div>
+    
+    <div class="centro">
+        <canvas style="background-color:#75a363;" id="meuCanvas" width="650" height="700" class="borda-story">
+        </canvas>
+    </div>
+
+    <!--Tudo da Webcam-->
+    <div>
+        <video id="minhaWebcam" playsinline autoplay width="650" height="700"></video>
+    </div>
+
+    <div>
+        <button id="foto">Tirar Foto</button>
+    </div>
+
+</body>
+</html>

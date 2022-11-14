@@ -1,0 +1,19 @@
+.centro{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(130deg, #cf3535 0%, #de005e 25%, #f40e48 50%, #de000e 75%, #5332cf 100%);
+    color: #FFFFFF;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.borda-story{
+    border-image: linear-gradient(#d44603, #f63cd7) 30;
+    border-width: 5px;
+    border-style: solid;
+}
